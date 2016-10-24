@@ -50,7 +50,7 @@ After your `Podfile` is setup properly, run `pod install`.
 1. Click on `AIRMaps.xcodeproj` in `Libraries` and go the `Build
    Settings` tab. Double click the text to the right of `Header Search
    Paths` and verify that it has `$(SRCROOT)/../../react-native/React` as well as `$(SRCROOT)/../../react-native/Libraries/Image` - if they
-   aren't, then add them. This is so XCode is able to find the headers that
+   aren't, then add them. Make sure they are both set to recursive. This is so XCode is able to find the headers that
    the `AIRMaps` source files are referring to by pointing to the
    header files installed within the `react-native` `node_modules`
    directory.
